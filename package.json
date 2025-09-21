@@ -1,0 +1,12 @@
+{
+  "name": "recursive-ai-executor",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"python -m uvicorn backend.app.main:app --reload --port 8000\" \"npm --prefix frontend run dev\"",
+    "dev:ps": "powershell -File run.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
